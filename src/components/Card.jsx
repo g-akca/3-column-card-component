@@ -17,10 +17,10 @@ function Card({ icon, title, description, primaryColor = "gold" }) {
   const colors = colorVariants[primaryColor] || colorVariants.gold;
 
   return (
-    <div className={`p-12 tablet:px-20 ${colors.bg} flex flex-col items-start gap-8`}>
+    <div className={`p-12 tablet:px-20 desktop:px-12 ${colors.bg} flex flex-col items-start gap-8 desktop:gap-10`}>
       <img src={icon} alt={`${title} icon`} className="h-10" />
 
-      <div className="flex flex-col gap-6 items-start">
+      <div className="grow flex flex-col gap-6 items-start desktop:justify-between">
         <div className="flex flex-col gap-6">
           <h2 className="text-[40px] leading-[120%] font-semibold font-shoulders text-gray-100">{title}</h2>
           <p className="opacity-75 font-light">{description}</p>

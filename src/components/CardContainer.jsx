@@ -27,7 +27,7 @@ function CardContainer() {
   ];
 
   return (
-    <main className="grid grid-rows-3 rounded-lg overflow-hidden tablet:max-w-170">
+    <main className="grid grid-rows-3 desktop:grid-rows-1 desktop:grid-cols-3 rounded-lg overflow-hidden tablet:max-w-170 desktop:max-w-230.25 desktop:min-h-125">
       {cards.map(card => (
         <Card
           key={card.title}
