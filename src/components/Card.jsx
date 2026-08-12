@@ -26,7 +26,11 @@ function Card({ icon, title, description, primaryColor = "gold" }) {
           <p className="opacity-75 font-light">{description}</p>
         </div>
 
-        <button type="button" className={`bg-gray-100 ${colors.text} px-6 py-2 h-12 w-36.75 rounded-[25px] cursor-pointer transition-colors duration-300 hover:bg-transparent hover:text-white hover:border-2 hover:border-white`}>
+        <button 
+          type="button" 
+          aria-label={`Learn more about ${title}`}
+          className={`bg-gray-100 ${colors.text} px-6 py-2 h-12 w-36.75 rounded-[25px] cursor-pointer transition-colors duration-300 hover:bg-transparent hover:text-white hover:border-2 hover:border-white`}
+        >
           Learn More
         </button>
       </div>
